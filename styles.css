@@ -49,3 +49,57 @@ body{
     color: #c8963e;
     transition: 0.3 all ease;
 }
+/* HERO SECTION */
+.hero {
+  height: 60vh;
+  background-image: url('https://images.unsplash.com/photo-1508963493744-76fce69379c0'); /* Replace with any cool watch image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); /* Overlay for readability */
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  padding: 0.8rem 2rem;
+  background-color: #c8963e;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+
+}
+
+.hero-btn:hover {
+  background-color: #a67c31;
+}
